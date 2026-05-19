@@ -1,0 +1,24 @@
+/* =============================================================
+   spares.css — Estilos para las vistas de Repuestos (Inventory Hub)
+   Extraído de spares/index.blade.php y spares/show.blade.php
+   ============================================================= */
+
+/* Lista de repuestos — efecto hover en filas */
+.spare-row:hover {
+    border-color: rgba(0, 102, 255, 0.25) !important;
+    background: rgba(0, 102, 255, 0.03) !important;
+}
+
+.spare-name:hover {
+    color: var(--st-primary) !important;
+}
+
+/* Detalle de repuesto — hover en links */
+.hover-primary:hover {
+    color: var(--st-primary) !important;
+}
+
+/* Historial de uso — eliminar borde inferior del último elemento */
+.last-child-no-border:last-child {
+    border-bottom: none !important;
+}

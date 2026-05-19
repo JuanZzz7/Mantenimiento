@@ -1,0 +1,111 @@
+/* =============================================================
+   reports.css — Estilos para el PDF de Reportes de Órdenes
+   Extraído de reports/pdf.blade.php
+   Nota: Este CSS es para renderizado PDF con DomPDF/Browsershot.
+         Usa unidades en pt y propiedades compatibles con PDF.
+   ============================================================= */
+
+* {
+    font-family: DejaVu Sans, sans-serif;
+    font-size: 9pt;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    color: #1e293b;
+}
+
+/* ── Cabecera del reporte ── */
+.header {
+    background: #1e40af;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 14pt;
+    margin-bottom: 2px;
+}
+
+.header small {
+    font-size: 8pt;
+    opacity: .8;
+}
+
+/* ── Cajas de resumen ── */
+.summary {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.summary-box {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+.summary-box .val {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.summary-box .lbl {
+    font-size: 7pt;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+/* ── Tabla de órdenes ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+th {
+    background: #1e40af;
+    color: #fff;
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 8pt;
+}
+
+td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+/* ── Badges de estado y prioridad ── */
+.badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 7pt;
+    font-weight: bold;
+}
+
+.badge-success   { background: #d1fae5; color: #065f46; }
+.badge-warning   { background: #fef3c7; color: #92400e; }
+.badge-info      { background: #dbeafe; color: #1e40af; }
+.badge-secondary { background: #f1f5f9; color: #475569; }
+.badge-danger    { background: #fee2e2; color: #991b1b; }
+
+/* ── Pie de página ── */
+.footer {
+    margin-top: 15px;
+    font-size: 7pt;
+    color: #94a3b8;
+    text-align: center;
+}

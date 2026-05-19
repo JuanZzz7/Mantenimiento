@@ -1,0 +1,39 @@
+* { font-family: 'Inter', sans-serif; }
+body {
+    background: #0f172a;
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background-image: radial-gradient(ellipse at 20% 50%, rgba(30,64,175,.15) 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, rgba(245,158,11,.08) 0%, transparent 50%);
+}
+.auth-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%; max-width: 420px;
+}
+.auth-logo {
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; color: #fff; margin: 0 auto 1.5rem;
+}
+.form-control {
+    background: #0f172a !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+    padding: .7rem 1rem;
+}
+.form-control:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59,130,246,.15) !important;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    border: none; padding: .75rem;
+    font-weight: 600;
+}
+.btn-primary:hover { opacity: .9; }
+.alert-danger { background: rgba(239,68,68,.15); color: #fca5a5; border: none; }
