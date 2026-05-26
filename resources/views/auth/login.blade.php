@@ -54,7 +54,7 @@
     </form>
 
     <p class="text-center mt-4 mb-0" style="font-size:.75rem;color:#475569;">
-        CMMS Industrial v1.0 &mdash; Sistema de Gestión de Mantenimiento
+        AutoSoft v1.0 &mdash; Sistema de Gestión de Mantenimiento
     </p>
 @endsection
 

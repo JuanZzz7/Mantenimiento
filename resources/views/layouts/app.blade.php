@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Dashboard') — CMMS Industrial</title>
+    <title>@yield('title', 'Dashboard') — AutoSoft</title>
 
     <!-- Bootstrap 5 -->
     <link href="{{ asset('css/vendor/bootstrap.min.css') }}" rel="stylesheet">
@@ -20,13 +20,13 @@
 <body>
 <!-- ■ SIDEBAR ──────────────────────────────────────────────────────────────── -->
 <nav id="sidebar">
-    <div class="sidebar-brand d-flex align-items-center gap-3">
-        <div class="brand-icon" style="width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, var(--st-primary), #4d94ff); display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 15px var(--st-primary-glow);">
-            <i class="bi bi-shield-shaded text-white fs-4"></i>
-        </div>
+    <div class="sidebar-brand d-flex align-items-center gap-2">
+        <img src="{{ asset('assets/autosoft-logo.png') }}"
+             alt="AutoSoft"
+             style="height:38px; width:38px; object-fit:contain; border-radius:8px; background:#fff; padding:3px; box-shadow: 0 3px 12px rgba(0,102,255,0.3);">
         <div>
-            <div class="fw-800 text-white" style="letter-spacing: -0.02em; font-size: 1.2rem; line-height: 1;">KINETIC</div>
-            <div class="st-title-sm" style="font-size: 0.55rem; color: var(--st-primary); opacity: 0.8;">Industrial OS</div>
+            <div class="fw-800 text-white" style="letter-spacing: -0.02em; font-size: 1.15rem; line-height: 1;">AutoSoft</div>
+            <div class="st-title-sm" style="font-size: 0.55rem; color: var(--st-primary); opacity: 0.8;">Gestión Industrial</div>
         </div>
     </div>
 
